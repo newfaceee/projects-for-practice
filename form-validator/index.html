@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Form Validator</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h2>Register New Account</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input   id="username"  type="text" placeholder="Enter username" >
+                <small>Username must have minimum 3 and maximum 15 values</small>    
+            </div>
+            <div class="form-control">
+                <label for="username">E-mail</label>
+                <input id="e-mail" type="text" placeholder="Enter e-mail" >
+                <small>valid e-mail looks like this: example@site.com</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input  id="password" type="password" placeholder="Enter password" >
+
+            </div>
+            <div class="form-control">
+                <label for="username">Confirm Password</label>
+                <input  id="confirm-password" type="password" placeholder="Enter password again" >
+                <small>passwords do not match</small>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
