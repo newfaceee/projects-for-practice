@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;;
+}
+body {
+    font-family: 'Open Sans';
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+.control-panel {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.control-panel__item {
+    padding:10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: cyan;
+}
+.users__panel {
+    width: 400px;
+}
+.users__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.users__item {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+

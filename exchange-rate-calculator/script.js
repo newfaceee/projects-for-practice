@@ -3,7 +3,6 @@ const currencySelectors = document.querySelectorAll('.currency-option');
 const inputs = document.querySelectorAll('input');
 const swapButton = document.querySelector('.btn-swap');
 const exchangeInfo = document.querySelector('.exchange-info');
-console.log(exchangeInfo);
 const currencyFrom = currencySelectors[0].children;
 const currencyTo = currencySelectors[1].children;
 
@@ -25,7 +24,10 @@ fetch(`https://prime.exchangerate-api.com/v5/${API_KEY}/latest/USD`)
             }
         }
 
-    })
+    });
+
+
+
 for (let currencyItem of currencyItems) {
     currencyItem.addEventListener('change', function () {
         const currencyFromValue = currencyFrom[currencySelectors[0].selectedIndex].textContent;
